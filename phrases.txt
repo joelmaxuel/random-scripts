@@ -1,0 +1,51 @@
+ac	All clear on my end				Confirms availability and readiness
+ais	As I suspected					Affirmation to confirm expectations/assumptions
+nss	But I'm not sure if I'm making sense		Expresses doubt and uncertainty
+dw	Don't worry about it				Non-committal note to ease concerns/doubts
+es	Effective sample includes			Refers to a subset of data
+gth	Glad to hear					Acknowledges good news or expected outcome
+hst	Having said that though,			Introduce a related point or clarification
+hth	Hope this helps					Common sign-off before signature
+ica	I can't agree					Polite refusal to concur with statement/proposal
+idk	I don't know					Expresses lack of knowledge/information
+dm	I don't mind at all.				Expresses no particular preference or opinion
+ie	I enjoyed it too				Acknowledges an experience positively
+lf	I look forward					Anticipation for a positive outcome
+io	I owe you!					Gratitude of help received
+hm	I seem to have missed				Admits oversight or forgotten information
+hmt	I seemed to have missed this earlier		Admits oversight of a task or conversation
+att	I'll attach that back to you (if desired)	Offers to return something
+ayl	I'll leave that for you, at your leisure	Offloads complex tasks
+itc	I'll take care of it				Assures responsibility
+imo	In my opinion					Personal judgment/bias about a matter
+jh	Just a heads up to say that			Giving notice of an impending action/event
+lmk	Let me know					Requests updates or feedback
+lc	Let's clarify					Requests additional information
+lsw	Let's see if we can get it sorted		Requests collaboration
+mcn	More cleanup is needed				Requests further refinement or editing
+apo	My apologies					Expressing regret for a mistake/inconvenience/offence
+nsh	I need some help				Requests assistance
+nan	No apology is necessary.			Reassures of no mistake/inconvenience/offence
+nsg	Not sure if that all looks good			Expresses uncertainty about results
+rbay	Right back at you!				Agreement, solidarity, or support for a perspective
+sty	Same to you					Reciprocity of sentiment/feeling
+syt	See you then					Informal farewell until a meeting/gathering
+sat	Sorry about that.				Regret for an inconvenience/mistake/problem
+dly	Sorry for the delay in answering.		Formal and courteous acknowledgement of delays
+sth	Sorry to hear this.				Expresses regret for bad news or negative information
+slp	Sounds like a plan				Agrees to proposals or plans
+tsm	Thank you so much!				Enthusiastic expression of gratitude for help
+te	Thanks for everything				A broad expression of gratitude
+tkm	Thanks for keeping me in mind			An appreciation for being considered
+ts	Thanks for the suggestion			Appreciation for a useful idea/recommendation
+tu	Thanks for the update				Appreciation on the update for a situation/project
+ta	Thanks, I appreciate that			Gratitude for help/support, or appreciation received
+tr	Thanks, I appreciate the reply			Gratitude for response to a message/inquiry/request
+tis	Thanks, I shall					Acknowledgement to follow through or take action
+tst	Thanks. I thought so, too.			Agreement another perspective/experience
+sf	That would be some script-fu to accomplish	Comments on the complexity of tasks or code
+wfm	This works for me				Agreement with proposal/plan/suggestion
+tt	Type to you later				Anticipates future communication
+wht	Will hear from you then				Anticipates future follow-up
+ir	Yes, I remember					Affirmation of an action/decision made earlier
+yw	You're welcome					Acknowledges gratitude

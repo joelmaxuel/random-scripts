@@ -1,0 +1,63 @@
+#!/bin/bash
+
+ONETBASE="./OneTab"
+ONETFILE="./OneTab.txt"
+ONETACTN=$1
+ONETOPIC=$2
+
+if [ -z "$ONETACTN" ] ; then
+    echo "No action specified - choose one of:"
+    echo "get [topic]    add [topic]    edit    sort    topics    kill    save"
+    ONETACTN="topics"
+fi
+
+case "$ONETACTN" in
+    "get")
+        grep "$ONETOPIC" $ONETFILE | cut -d '|' -f 2-
+        ;;
+    "add")
+        set -e
+        touch /tmp/insert-onetab.txt
+        editor /tmp/insert-onetab.txt
+        awk -v topic="$ONETOPIC" '{print topic " | " $0}' /tmp/insert-onetab.txt >> $ONETFILE
+        rm /tmp/insert-onetab.txt
+        set +e
+        ;;
+    "edit")
+        editor $ONETFILE
+        ;;
+    "sort")
+        set -e
+        cat $ONETFILE | sort | uniq > /tmp/sorted-onetab.txt
+        cp /tmp/sorted-onetab.txt $ONETFILE
+        set +e
+        ;;
+    "topics")
+        echo "Current Topics:"
+        cat $ONETFILE | cut -d '|' -f 1 | sort | uniq
+        ;;
+    "kill")
+        wc -l $ONETFILE $ONETBASE.rip
+        echo -n "Moving "
+        grep -P "^\*" $ONETFILE -c | tr -d '\n'
+        echo " entries marked with an asterisk to OneTab.rip ..."
+        grep -P "^\*" $ONETFILE >> $ONETBASE.rip
+        grep -v -P "^\*" $ONETFILE > /tmp/OneTab.tmp
+        cp /tmp/OneTab.tmp $ONETFILE
+        sed -i "s/^\*//g" $ONETBASE.rip
+        wc -l $ONETFILE $ONETBASE.rip
+        ;;
+    "save")
+        wc -l $ONETFILE $ONETBASE.rip
+        echo -n "Moving "
+        grep -P "^\*" $ONETBASE.rip -c | tr -d '\n'
+        echo " entries marked with an asterisk from OneTab.rip ..."
+        grep -P "^\*" $ONETBASE.rip >> $ONETFILE
+        grep -v -P "^\*" $ONETBASE.rip > /tmp/OneTab.tmp
+        cp /tmp/OneTab.tmp $ONETBASE.rip
+        sed -i "s/^\*//g" $ONETFILE
+        wc -l $ONETFILE $ONETBASE.rip
+        onetab sort
+        ;;
+
+esac
